@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- <form action="\play" method="get">
+<label for="rock_paper_scissors">Pick your choise to play agains computer:</label>
+<select id="choice_form" name="choice_form">
+  <option value="rock">Rock</option>
+  <option value="paper">Paper</option>
+  <option value="scissors">Scissors</option>
+  
+</select>
+</form> -->
+<form action="/play">
+    <label for="rock_paper_scissors">Pick your choise to play agains computer:</label>
+    <select id="choice_formm" name="choice_formm">
+      <option value="rock">Rock</option>
+      <option value="paper">Paper</option>
+      <option value="scissors">Scissors</option>
+      
+    </select>
+    <input type="submit">
+  </form>
+<div>
+    <p>{{ winner_against_computer }}</p>
+</div>
+
+{% endblock%}
